@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="en-us">
 	<head>
-		<link rel="stylesheet" href="css/reset.css" type="text/css">
-		<link rel="stylesheet" href="css/style.css" type="text/css">
+		<link rel="stylesheet" href="respcss/reset.css" type="text/css">
+		<link rel="stylesheet" href="respcss/style.css" type="text/css">
 		<meta charset="UTF-8">
-		<title>Hi!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact | Joseph Pineiro</title>
 	</head>
-	<body>
-		<header>
-			<h1>Joseph Pineiro</h1>
-		<nav>
-			<a href="index.html">About</a> 
-			<br>
-			<a href="portfolio.html">Portfolio</a>
-			<br>
-			<a href="contact.html">Contact</a>
-			</header>
-			<aside>
-				<h3>
-					Connect with Me
-				</h3>
-					<a href="https://www.linkedin.com/in/josephpineiro/"><img src="https://cdn3.iconfinder.com/data/icons/social-44/63/Social_Icons-05-128.png" width="64" height="64" class="second-r"></a>
+	<!doctype html>
+<html lang="en-us">
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Joseph Pineiro</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        			<a href="https://www.linkedin.com/in/josephpineiro/"><img src="https://cdn3.iconfinder.com/data/icons/social-44/63/Social_Icons-05-128.png" width="64" height="64" class="second-r"></a>
 					<a href="https://github.com/josephericpineiro/">
 					<img src="https://cdn0.iconfinder.com/data/icons/social-36/66/28-128.png" width="64" height="64" class="third-r"></a>
 					<a href="https://stackoverflow.com/users/8099895/pineiro7"><img src="https://cdn1.iconfinder.com/data/icons/social-black-buttons/512/overflow-128.png" width="64" height="64" class="fourth-r"></a>
-			</aside>
-		<div class="container">
-  <form action="/action_page.php">
+      </div>
+    </section>
+  </div>
 
-    <label for="fname">First Name</label>
-    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  <footer>
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
+</body>
 
-    <label for="lname">Last Name</label>
-    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-    <label for="subject">Subject</label>
-    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-
-    <input type="submit" value="Submit">
-
-  </form>
-</div>
-	</body>
+</html>
